@@ -1,0 +1,51 @@
+{
+  "name": "ticTacToe",
+  "version": "1.0.0",
+  "description": "service game tic-tac-toe",
+  "main": "dist/index.js",
+  "scripts": {
+    "start:local": "NODE_ENV=development BABEL_DISABLE_CACHE=1 babel-node ./src/server/server.js",
+    "build": "NODE_ENV=production babel src/ --out-dir dist",
+    "start": "NODE_ENV=production node dist/server/server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "service"
+  ],
+  "author": {
+    "name": "jirufik",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "jirufik",
+      "url": ""
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "config": "^3.3.1",
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "koa-bodyparser": "^4.3.0",
+    "swagger-jsdoc": "^4.0.0",
+    "koa2-swagger-ui": "^5.0.2",
+    "jest": "^26.4.2",
+    "jrf-path-exists": "^1.0.4",
+    "mongodb": "^3.6.2",
+    "jrf-graylog": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/cli": "^7.11.6",
+    "@babel/node": "^7.10.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
